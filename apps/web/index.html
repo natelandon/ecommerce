@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern ecommerce platform with secure checkout and seamless shopping experience"
+    />
+    <title>Ecommerce - Shop Quality Products</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Preconnect to critical third-party origins -->
+    <link rel="preconnect" href="https://fakestoreapi.com" />
+    <link rel="preconnect" href="http://localhost:4000" />
+
+    <!-- DNS prefetch for Stripe (reduces latency when checkout loads) -->
+    <link rel="dns-prefetch" href="https://js.stripe.com" />
+    <link rel="dns-prefetch" href="https://m.stripe.network" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

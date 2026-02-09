@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:integration": "jest --config jest.integration.config.cjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "redis": "^4.7.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@types/supertest": "^2.0.16",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}

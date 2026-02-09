@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w apps/api\" \"npm run dev -w apps/web\"",
+    "build": "npm run build -ws",
+    "lint": "npm run lint -ws",
+    "test": "npm run test -ws",
+    "test:integration": "npm run test:integration -w apps/api",
+    "storybook": "npm run storybook -w apps/web",
+    "storybook:test": "npm run storybook:test -w apps/web",
+    "format": "npm run format -ws",
+    "clean": "gulp clean"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/cors": "^2.8.19",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "gulp": "^4.0.2",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.5.4"
+  }
+}
