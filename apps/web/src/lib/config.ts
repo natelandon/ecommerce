@@ -8,9 +8,9 @@ function getApiBaseUrl(): string {
   try {
     // @ts-ignore
     const url = __import__('').meta.env.VITE_API_URL;
-    return url || 'http://localhost:4000';
+    return url || 'https://fakestoreapi.com';
   } catch {
-    return 'http://localhost:4000';
+    return 'https://fakestoreapi.com';
   }
 }
 
