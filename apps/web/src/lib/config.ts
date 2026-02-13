@@ -8,6 +8,7 @@ function getApiBaseUrl(): string {
   try {
     // @ts-ignore
     const url = __import__('').meta.env.VITE_API_URL;
+    // TODO: Replace with your Render API URL after deployment
     return url || 'https://fakestoreapi.com';
   } catch {
     return 'https://fakestoreapi.com';
